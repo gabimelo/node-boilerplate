@@ -1,0 +1,41 @@
+{
+  "name": "node-boilerplate",
+  "version": "0.0.0",
+  "description": "Node boilerplate, using MongoDB and Mongoose, providing basic server and app setup, and modules for user registration, login, and end point authentication, using JWT.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabiml/node-boilerplate"
+  },
+  "private": false,
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --timeout 10000",
+    "pm2": "pm2 restart 0",
+    "start": "npm run git:pull && npm install && npm run pm2",
+    "git:pull": "git pull"
+  },
+  "dependencies": {
+    "async": "^2.1.4",
+    "bcryptjs": "~2.3.0",
+    "body-parser": "~1.13.3",
+    "cors": "~2.7.1",
+    "ejs": "^2.5.3",
+    "express": "~4.13.3",
+    "jsonwebtoken": "~5.7.0",
+    "method-override": "~2.3.5",
+    "moment": "~2.14.1",
+    "mongodb": "~2.1.18",
+    "mongoose": "^4.4.10",
+    "mongoose-id-validator": "^0.4.0",
+    "mongoose-unique-validator": "^1.0.3",
+    "morgan": "~1.6.1",
+    "nodemon": "~1.9.1",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5"
+  }
+}
